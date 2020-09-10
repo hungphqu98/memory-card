@@ -1,12 +1,16 @@
 let simpsonsDeck = ["aces.png","aces.png","jacks.png","jacks.png","queen.png","queen.png","king.png","king.png","deep.jpg","deep.jpg"];
 let bbDeck = ["bbace.jpg","bbace.jpg","bbqueen.jpg","bbqueen.jpg","bbjack.jpg","bbjack.jpg","bbking.jpg","bbking.jpg","bbjoker.jpg","bbjoker.jpg"];
 let muppetDeck = ["muppetking.png","muppetking.png","muppetqueen.png","muppetqueen.png","muppetjack.png","muppetjack.png","muppetace.png","muppetace.png","muppetjoker.png","muppetjoker.png"];
+let spe1Deck = ["spe1ace.jpg","spe1ace.jpg","spe1two.jpg","spe1two.jpg","spe1three.jpg","spe1three.jpg","spe1four.jpg","spe1four.jpg","spe1five.jpg","spe1five.jpg"];
+let spe2Deck = ["spe2ace.jpg","spe2ace.jpg","spe2jack.jpg","spe2jack.jpg","spe2queen.jpg","spe2queen.jpg","spe2king.jpg","spe2king.jpg","spe2ten.jpg","spe2ten.jpg"];
 let startBtn = document.getElementById('startBtn');
 let start = document.getElementById('startModal');
 let deck = document.getElementById('deckModal');
 let startBtnSimp = document.getElementById('startBtnSimp');
 let startBtnBB = document.getElementById('startBtnBB');
 let startBtnMup = document.getElementById('startBtnMup');
+let startBtnSpe1 = document.getElementById('startBtnSpe1');
+let startBtnSpe2 = document.getElementById('startBtnSpe2');
 startBtn.onclick = function() {
     start.style.display = "none";
     deck.style.display = "block";
@@ -22,6 +26,14 @@ startBtnBB.onclick = function() {
 startBtnMup.onclick = function() {
     deck.style.display = "none";
     startG(muppetDeck);
+};
+startBtnSpe1.onclick = function() {
+    deck.style.display = "none";
+    startG(spe1Deck);
+};
+startBtnSpe2.onclick = function() {
+    deck.style.display = "none";
+    startG(spe2Deck);
 };
 function startG(deckName) {
     for (i = 0; i < deckName.length; i++) {
