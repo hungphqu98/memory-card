@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    min-height: 100vh;;
+}
+body {
+    margin: 0;
+    padding: 10px;
+}
+.page-title {
+    text-align: center;
+    font-weight: normal;
+}
+.container {
+    margin: 0 auto;
+    max-width: 70%;
+}
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    margin-top: 30px;
+    perspective: 1000px;
+    transition: 4s background-color;
+}
+.card {
+    margin: 0 auto;
+    height: 264px;
+    width: 180px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.card:active {
+    transform: scale(.97);
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+.card img {
+    height: 264px;
+    width: 180px;
+    text-align: center;
+}
+.back-card {
+    backface-visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    overflow: hidden;
+    
+}
+.front-card {
+    backface-visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    transform: rotateY(180deg);
+    overflow: hidden;
+}
+.modal {
+    display: block;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    height: 30%;
+    text-align: center;
+    position: relative;
+}
+.start {
+    display: block;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#startBtn {
+    position: absolute;
+    bottom: 0;
+    margin-left: -150px;
+    margin-bottom: 50px;
+    width: 300px;
+    color: #202129;
+    background-color: #f2f2f2;
+    padding: 12px 12px;
+    border-radius: 15px;
+}
+.deck {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.Btn {
+
+    color: #202129;
+    background-color: #f2f2f2;
+    padding: 12px 12px;
+    border-radius: 15px;
+}
+.over {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#restartBtn {
+    position: absolute;
+    bottom: 0;
+    margin-left: -150px;
+    margin-bottom: 50px;
+    width: 300px;
+    color: #202129;
+    background-color: #f2f2f2;
+    padding: 12px 12px;
+    border-radius: 15px;
+}
+.finish {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+#againBtn {
+    position: absolute;
+    bottom: 0;
+    margin-left: -150px;
+    margin-bottom: 50px;
+    width: 300px;
+    color: #202129;
+    background-color: #f2f2f2;
+    padding: 12px 12px;
+    border-radius: 15px;
+}
+.matched {
+    height: 264px;
+    width: 180px;
+    background-color: black !important;
+    margin: 0 auto;
+    transition-delay: 2s;
+}
+.matched:before {
+    height: 264px;
+    width: 180px;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.matched img {
+    width: 0%;
+    text-align: center;
+}
+.test {
+    margin: 0 auto;
+    height: 264px;
+    width: 180px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+#back-card {
+    backface-visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    overflow: hidden;
+}

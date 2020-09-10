@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="page-title">Card Matching</h1>
+    <div class="container">
+        <div class="info-container">
+            <div class="turn">Turn <span id="turn-made"> 0 </span> </div>
+            <div class="time">Time  <span id="time-remaining">60</span> </div>
+        </div>
+        <div class="card-container">
+            <div class="card" data-framework="ace">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="ace">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="jack">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="jack">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="queen">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                   
+                </div>
+            </div>
+            <div class="card" data-framework="queen">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="king">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                    
+                </div>
+            </div>
+            <div class="card" data-framework="king">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                   
+                </div>
+            </div>
+            <div class="card" data-framework="depp">
+                <div  class="back-card card-face ">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                   
+                </div>
+            </div>
+            <div class="card" data-framework="depp">
+                <div class="back-card card-face">
+                    <img src="assets/suramar-card-back.png" alt="">
+                </div>
+                <div class="front-card card-face test">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="startModal" class="start">
+            <div class="modal-content">
+                <h2>Welcome to the game!</h2>
+              <button id="startBtn">Start Game</button>
+            </div>
+    </div>
+    <div id="deckModal" class="deck">
+        <div class="modal-content">
+            <h2>Choose your deck</h2>
+          <button class="Btn" id="startBtnSimp">The Simpsons</button>
+          <button class="Btn" id="startBtnBB">Breaking Bad</button>
+          <button class="Btn" id="startBtnMup">The Muppets</button>
+        </div>
+    </div>
+    <div id="overModal" class="over">
+        <div class="modal-content">
+            <h2>Times up!</h2>
+          <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+    <div id="finishModal" class="finish">
+        <div class="modal-content">
+            <h2>Well played! </h2>
+          <button id="againBtn">Play Again</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
