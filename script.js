@@ -129,6 +129,8 @@ function startGame() {
     }
     function done() {
         if (matched == 5) {
+            document.getElementById('numberTurn').innerHTML =  turn + 1;
+            document.getElementById('timeRemain').innerHTML = count;
             finish.style.display = "block";
             clearTimeout(timer);
             clearTimeout(timerflip);
@@ -154,6 +156,7 @@ function startGame() {
         };
         againBtn.onclick = function () {
             finish.style.display = "none";
+            
             location.reload();
         };
     }
