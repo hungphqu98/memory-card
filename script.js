@@ -40,12 +40,6 @@ function startG(deckName) {
         document.getElementsByClassName("front-card")[i].innerHTML += '<img class="testImg">';
         document.querySelectorAll("img.testImg")[i].src = "assets/"+deckName[i];
     }
-
-}
-
-
-function startGame() {
-    
     const cards = document.querySelectorAll('.card');  
     cards.forEach(card => card.addEventListener('click', flip));
     let hasFlipped = false;
@@ -161,6 +155,4 @@ function startGame() {
         };
     }
     ending();
-    
 }
-window.onload = startGame()
